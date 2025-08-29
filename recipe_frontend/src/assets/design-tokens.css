@@ -1,0 +1,127 @@
+:root {
+  /* Color tokens (from design_system_b2c...) */
+  --color-ffffff: #ffffff;
+  --color-292929: #292929;
+  --color-000000: #000000;
+  --color-e9fffa: #e9fffa;
+  --color-979797: #979797;
+  --color-fff2af: #fff2af;
+  --color-129575: #129575;
+  --color-dadada: #dadada;
+  --color-4cd964: #4cd964;
+  --color-121212: #121212;
+  --color-ff9c00: #ff9c00;
+  --color-ffc107: #ffc107;
+  --color-ff3d00: #ff3d00;
+  --color-4caf50: #4caf50;
+  --color-1976d2: #1976d2;
+  --color-035b81: #035b81;
+  --color-d9d9d9: #d9d9d9;
+  --color-484848: #484848;
+  --color-303030: #303030;
+  --color-a9a9a9: #a9a9a9;
+  --color-ffa61a: #ffa61a;
+  --color-ffce80: #ffce80;
+  --color-71b1a1: #71b1a1;
+  --color-130f26: #130f26;
+  --color-c1c1c1: #c1c1c1;
+  --color-ffe1b3: #ffe1b3;
+  --color-ffad30: #ffad30;
+  --color-dbebE7: #dbebe7;
+  --color-898989: #898989;
+  --color-292d32: #292d32;
+  --color-181818: #181818;
+  --color-c4c4c4: #c4c4c4;
+  --color-797979: #797979;
+  --color-808a96: #808a96;
+  --color-ceecd7: #ceecd7;
+  --color-31b057: #31b057;
+  --color-ffe1e7: #ffe1e7;
+  --color-fd3654: #fd3654;
+  --color-ffba4d: #ffba4d;
+  --color-d8d8d8: #d8d8d8;
+  --color-f6faf9: #f6faf9;
+  --color-afd3ca: #afd3ca;
+  --color-f4f4f4: #f4f4f4;
+  --color-9747ff: #9747ff;
+  --color-828282: #828282;
+
+  /* Typography tokens (subset used by this screen) */
+  --font-poppins: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-sf-pro-display: "SF Pro Display", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+
+  /* typo_60: Poppins 30/600/45 left #000000 */
+  --typo-60-family: var(--font-poppins);
+  --typo-60-size: 30px;
+  --typo-60-weight: 600;
+  --typo-60-line: 45px;
+  --typo-60-color: var(--color-000000);
+
+  /* typo_61: Poppins 20/400/30 left #121212 */
+  --typo-61-family: var(--font-poppins);
+  --typo-61-size: 20px;
+  --typo-61-weight: 400;
+  --typo-61-line: 30px;
+  --typo-61-color: var(--color-121212);
+
+  /* typo_62: Poppins 11/400/16.5 center #ff9c00 */
+  --typo-62-family: var(--font-poppins);
+  --typo-62-size: 11px;
+  --typo-62-weight: 400;
+  --typo-62-line: 16.5px;
+  --typo-62-color: var(--color-ff9c00);
+
+  /* typo_63: Poppins 11/500/16.5 left #000000 */
+  --typo-63-family: var(--font-poppins);
+  --typo-63-size: 11px;
+  --typo-63-weight: 500;
+  --typo-63-line: 16.5px;
+  --typo-63-color: var(--color-000000);
+
+  /* typo_64: Poppins 11/500/16.5 left #d9d9d9 */
+  --typo-64-family: var(--font-poppins);
+  --typo-64-size: 11px;
+  --typo-64-weight: 500;
+  --typo-64-line: 16.5px;
+  --typo-64-color: var(--color-d9d9d9);
+
+  /* typo_65: Poppins 11/400/16.5 left #d9d9d9 */
+  --typo-65-family: var(--font-poppins);
+  --typo-65-size: 11px;
+  --typo-65-weight: 400;
+  --typo-65-line: 16.5px;
+  --typo-65-color: var(--color-d9d9d9);
+
+  /* typo_66: Poppins 14/400/21 left #121212 */
+  --typo-66-family: var(--font-poppins);
+  --typo-66-size: 14px;
+  --typo-66-weight: 400;
+  --typo-66-line: 21px;
+  --typo-66-color: var(--color-121212);
+
+  /* typo_67: SF Pro Display 15/500/17.9 left #303030 */
+  --typo-67-family: var(--font-sf-pro-display);
+  --typo-67-size: 15px;
+  --typo-67-weight: 500;
+  --typo-67-line: 17.9px;
+  --typo-67-color: var(--color-303030);
+
+  /* typo_58: Poppins 16/600/24 center #ffffff (Big Button label) */
+  --typo-58-family: var(--font-poppins);
+  --typo-58-size: 16px;
+  --typo-58-weight: 600;
+  --typo-58-line: 24px;
+  --typo-58-color: var(--color-ffffff);
+
+  /* Spacing radii and borders used */
+  --radius-10: 10px;
+  --radius-30: 30px;
+  --radius-100: 100px;
+
+  --stroke-1: 1px;
+  --stroke-1-5: 1.5px;
+
+  /* Shadows used */
+  --shadow-elevation-0: 0 0 5px 3px #696969; /* shadow_0 */
+  --shadow-elevation-3: 0 0 20px 0 #000000;  /* shadow_3 */
+}

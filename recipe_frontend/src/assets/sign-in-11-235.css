@@ -1,0 +1,255 @@
+.sign-in {
+  /* style_10: background color white and radius 30 already via .screen */
+}
+
+/* Typography */
+.hello {
+  position: absolute;
+  margin: 0;
+  font-family: var(--typo-60-family);
+  font-size: var(--typo-60-size);
+  font-weight: var(--typo-60-weight);
+  line-height: var(--typo-60-line);
+  color: var(--typo-60-color);
+}
+.welcome {
+  position: absolute;
+  margin: 0;
+  font-family: var(--typo-61-family);
+  font-size: var(--typo-61-size);
+  font-weight: var(--typo-61-weight);
+  line-height: var(--typo-61-line);
+  color: var(--typo-61-color);
+}
+
+/* Inputs (component style_30 for rectangle, labels typo_66, placeholder typo_65) */
+.input-field .input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--typo-66-family);
+  font-size: var(--typo-66-size);
+  font-weight: var(--typo-66-weight);
+  line-height: var(--typo-66-line);
+  color: var(--typo-66-color);
+}
+
+.input-field .input-rect {
+  position: absolute;
+  left: 0;
+  top: 26px; /* label (21px height) + ~5px spacing to match 81 container total */
+  width: 100%;
+  height: 55px; /* as per figma */
+  border: var(--stroke-1-5) solid var(--color-d9d9d9); /* style_30 */
+  border-radius: var(--radius-10);
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.input-field input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-family: var(--typo-65-family);
+  font-size: var(--typo-65-size);
+  font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line);
+  color: var(--color-121212);
+  background: transparent;
+}
+
+.input-field input::placeholder {
+  color: var(--typo-65-color);
+}
+
+/* Forgot Password button */
+.forgot-password {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--typo-62-family);
+  font-size: var(--typo-62-size);
+  font-weight: var(--typo-62-weight);
+  line-height: var(--typo-62-line);
+  color: var(--typo-62-color);
+}
+
+/* CTA Big Button */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--color-129575);
+  color: var(--color-ffffff);
+  border: none;
+  border-radius: var(--radius-10);
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
+.cta-button:active { transform: scale(0.98); }
+
+.cta-label {
+  font-family: var(--typo-58-family);
+  font-size: var(--typo-58-size);
+  font-weight: var(--typo-58-weight);
+  line-height: var(--typo-58-line);
+  color: var(--typo-58-color);
+}
+
+/* Arrow icon */
+.cta-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.cta-icon::before,
+.cta-icon::after {
+  content: "";
+  position: absolute;
+}
+.cta-icon::before {
+  left: 3px;
+  right: 3px;
+  top: 9px;
+  height: 2px;
+  background: var(--color-ffffff);
+}
+.cta-icon::after {
+  width: 8px;
+  height: 8px;
+  right: 3px;
+  top: 6px;
+  border-top: 2px solid var(--color-ffffff);
+  border-right: 2px solid var(--color-ffffff);
+  transform: rotate(45deg);
+  background: transparent;
+}
+
+/* Divider */
+.divider-group {
+  position: relative;
+  height: 17px;
+}
+.divider-group .divider-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  font-family: var(--typo-64-family);
+  font-size: var(--typo-64-size);
+  font-weight: var(--typo-64-weight);
+  line-height: var(--typo-64-line);
+  color: var(--typo-64-color);
+  white-space: nowrap;
+}
+.divider-group .line {
+  position: absolute;
+  top: 9px;
+  height: 1px;
+  background: var(--color-d9d9d9);
+  width: 30%;
+}
+.divider-group .line.left { left: 0; }
+.divider-group .line.right { right: 0; }
+
+/* Social buttons */
+.social-btn {
+  background: var(--color-ffffff);
+  border: none;
+  border-radius: var(--radius-10);
+  width: 44px; height: 44px;
+  box-shadow: var(--shadow-elevation-0);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+.social-btn:hover { box-shadow: 0 0 8px 0 #6c6c6c; }
+.social-btn:active { transform: scale(0.98); }
+.social-btn .social-inner {
+  width: 24px; height: 24px; position: relative; display: inline-block;
+}
+.social-btn.google .social-inner::before,
+.social-btn.google .social-inner::after {
+  content: "";
+  position: absolute;
+}
+.social-btn.google .social-inner::before {
+  left: 2px; top: 2px;
+  width: 20px; height: 20px;
+  background: conic-gradient(
+    var(--color-ffc107) 0 90deg,
+    var(--color-4caf50) 90deg 180deg,
+    var(--color-1976d2) 180deg 270deg,
+    var(--color-ff3d00) 270deg 360deg
+  );
+  border-radius: 50%;
+}
+.social-btn.facebook .social-inner {
+  background: var(--color-035b81);
+  border-radius: 4px;
+}
+.social-btn.facebook .social-inner::before {
+  content: "";
+  position: absolute;
+  left: 10px; top: 5px;
+  width: 4px; height: 14px;
+  background: var(--color-ffffff);
+  border-radius: 1px;
+}
+.social-btn.facebook .social-inner::after {
+  content: "";
+  position: absolute;
+  left: 8px; top: 9px;
+  width: 8px; height: 4px;
+  background: var(--color-ffffff);
+  border-radius: 1px;
+}
+
+/* Status text */
+.time-text {
+  font-family: var(--typo-67-family);
+  font-size: var(--typo-67-size);
+  font-weight: var(--typo-67-weight);
+  line-height: var(--typo-67-line);
+  color: var(--typo-67-color);
+}
+
+/* Bottom link text */
+.bottom-auth-text {
+  position: relative;
+  margin: 0;
+  font-family: var(--typo-63-family);
+  font-size: var(--typo-63-size);
+  font-weight: var(--typo-63-weight);
+  line-height: var(--typo-63-line);
+  color: var(--typo-63-color);
+  white-space: nowrap;
+}
+.bottom-auth-text .link {
+  color: var(--typo-63-color);
+  text-decoration: none;
+}
+.bottom-auth-text .link:focus,
+.bottom-auth-text .link:hover { text-decoration: underline; }
+
+/* Home Indicator */
+.home-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-indicator .home-line {
+  display: inline-block;
+  width: 135px;
+  height: 5px;
+  background: var(--color-121212);
+  border-radius: var(--radius-100);
+}
